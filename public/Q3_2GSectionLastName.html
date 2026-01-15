@@ -27,25 +27,25 @@
 <body>
 
     
-    <form action="somepage.html" method="post">
+    <form action="somepage.html" method="post" >
 
         <fieldset>
        
     <label for="StudentID">StudentID:</label>
-    <input type="number" id="StudentID" name="StudentID" required><br/>
+    <input type="number" id="StudentID" name="StudentID" required onfocus="changeColor(this)" onblur="resetColor(this)" ><br/>
             
 
     <label for="fullName">Full Name:</label>
-    <input type="text" id="fullName" name="fullName" required><br/>
+    <input type="text" id="fullName" name="fullName" required onfocus="changeColor(this)" onblur="resetColor(this)"  ><br/>
 
     <label for="birthday">Birthday:</label>
     <input type="date" id="birthday" name="birthday" required><br/>
 
     <label for="emailaddress">Email Address:</label>
-    <input type="email" id="emailaddress" name="emailaddress"required><br/>
+    <input type="email" id="emailaddress" name="emailaddress"required onfocus="changeColor(this)" onblur="resetColor(this)" ><br/>
 
-    <label for="mobilephone">Mobile Phone:</label>
-    <input type="text" id="mobilephone" name="mobilephone"required><br/>
+    <label for="mobilephone">Mobile Phone:</label> 
+    <input type="text" id="mobilephone" name="mobilephone"required onfocus="changeColor(this)" onblur="resetColor(this)" ><br/>
 
     <label for="gradelevel" required>Grade Level:</label>
 
@@ -61,14 +61,14 @@
 
 <fieldset>
 
-<p> Intern or Extern</p>
+<p> Intern or Extern</p> </br>
+<label for="internorextern">Intern</label> 
 <input type="radio" id="intern" name= "internorextern" value="intern" required>
-<label for="internorextern">Intern</label> </br>
 
+<label for="internorextern">Extern</label> 
 <input type="radio" id="extern" name= "internorextern" value="extern" required>
-<label for="internorextern">Extern</label> </br>
 
-</fieldset></br>
+</fieldset>
 
 <label for="organizationorclub" required>Preferreed Organization:</label>
 
@@ -82,7 +82,7 @@
 </select></br> </br>
 
 <label for="reason">Why do you want to join:</label> </br>
-<textarea id="reason" name="reason" rows="4"cols="50" required></textarea><br/>
+<textarea id="reason" name="reason" rows="4"cols="50" required onfocus="changeColor(this)" onblur="resetColor(this)" ></textarea><br/>
 
 <fieldset>
 
@@ -96,6 +96,22 @@
 
 
     </form>
+    <script>
+function changeColor(element){
+
+console.log (element);
+element.style.backgroundColor="red";
+}
+
+function resetColor(element){
+
+console.log(element);
+element.style.backgroundColor="orange";
+}
+
+
+
+    </script>
 
     
 </body>
