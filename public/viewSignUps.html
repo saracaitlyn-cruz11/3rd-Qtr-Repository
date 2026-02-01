@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>viewsignups</title>
+
+    <link rel="stylesheet" href="style1.css" />
+    <script src="q3_2gjava.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   
+<main>
+    <h1>Show List of Students Who Signed-Up</h1>
+    <h4> by SCA CRUZ</h4>
+    <div class="filter-card">
+        <label for="organizationFilter">Select Your Organization:</label>
+        <select id="organizationFilter">
+            <option value="" disabled selected>-- Choose an option --</option>
+            <option value="The Science Scholar">The Science Scholar</option>
+            <option value="Ang Lagablab">Ang Lagablab</option>
+            <option value="Solace">Solace</option>
+            <option value="Bahaghari">Bahaghari</option>
+            <option value="Kandili">Kandili</option>
+        </select>
+
+        <button onclick="window.location.href='Q3_2GMgCruz.html'" class="back-btn">Back to Signup</button>
+    </div>
+
+    <p id="count" class="record-count"></p>
+
+    <div class="table-container">
+        <table id="results"></table>
+    </div>
+</main>
+

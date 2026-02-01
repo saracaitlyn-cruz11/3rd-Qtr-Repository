@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="q3_2gjava.js" defer></script>
 </head>
 
 <header>
@@ -27,7 +28,7 @@
 <body>
 
     
-    <form action="somepage.html" method="post" >
+    <form  method="post" >
 
         <fieldset>
        
@@ -49,37 +50,45 @@
 
     <label for="gradelevel" required>Grade Level:</label>
 
-<select>
+<select id="gradelevel">
   <option value="option1">7</option>
   <option value="option2">8</option>
   <option value="option3">9</option>
-  <option value="option3">10</option>  
-  <option value="option3">11</option>
-  <option value="option3">12</option>
+  <option value="option4">10</option>  
+  <option value="option5">11</option>
+  <option value="option6">12</option>
 
 </select>
 
 <fieldset>
+  <label>Intern or Extern</label>
 
-<p> Intern or Extern</p> </br>
-<label for="internorextern">Intern</label> 
-<input type="radio" id="intern" name= "internorextern" value="intern" required>
+  <div class="radio-group">
+    <label>
+      <input type="radio" name="internorextern" value="intern" required>
+      Intern
+    </label>
 
-<label for="internorextern">Extern</label> 
-<input type="radio" id="extern" name= "internorextern" value="extern" required>
-
+    <label>
+      <input type="radio" name="internorextern" value="extern" required>
+      Extern
+    </label>
+  </div>
 </fieldset>
+
 
 <label for="organizationorclub" required>Preferreed Organization:</label>
 
-<select>
-  <option value="option1">The Science Scholar</option>
-  <option value="option2">Ang Lagablab</option>
-  <option value="option3">Solace</option>
-  <option value="option3">Bahaghari</option>  
-  <option value="option3">Kandili</option>
+<select id="organization">
+<option value="">-- Choose an option --</option>
+  <option value="The Science Scholar">The Science Scholar</option>
+  <option value="Ang Lagablab">Ang Lagablab</option>
+  <option value="Solace">Solace</option>
+  <option value="Bahaghari">Bahaghari</option>  
+  <option value="Kandili">Kandili</option>
+</select>
 
-</select></br> </br>
+</br> </br>
 
 <label for="reason">Why do you want to join:</label> </br>
 <textarea id="reason" name="reason" rows="4"cols="50" required onfocus="changeColor(this)" onblur="resetColor(this)" ></textarea><br/>
@@ -96,22 +105,7 @@
 
 
     </form>
-    <script>
-function changeColor(element){
 
-console.log (element);
-element.style.backgroundColor="red";
-}
-
-function resetColor(element){
-
-console.log(element);
-element.style.backgroundColor="orange";
-}
-
-
-
-    </script>
 
     
 </body>
